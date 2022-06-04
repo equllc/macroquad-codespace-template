@@ -10,3 +10,4 @@ FROM mcr.microsoft.com/vscode/devcontainers/rust:0-${VARIANT}
 
 RUN apt-get update -y
 RUN apt-get install -y pkg-config libx11-dev libxi-dev libgl1-mesa-dev libasound2-dev
+RUN rustup target add wasm32-unknown-unknown
