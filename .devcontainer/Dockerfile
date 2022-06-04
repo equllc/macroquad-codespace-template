@@ -9,4 +9,4 @@ FROM mcr.microsoft.com/vscode/devcontainers/rust:0-${VARIANT}
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
 RUN apt-get update
-RUN apt-get install pkg-config libx1-dev libxi-dev libgl1-mesa-dev libasound2-dev
+RUN apt-get install pkg-config libx11-dev libxi-dev libgl1-mesa-dev libasound2-dev
