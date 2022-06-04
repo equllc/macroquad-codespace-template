@@ -9,5 +9,5 @@ FROM mcr.microsoft.com/vscode/devcontainers/rust:0-${VARIANT}
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
 RUN apt-get update -y
-RUN apt-get install -y pkg-config libx11-dev libxi-dev libgl1-mesa-dev libasound2-dev
+RUN apt-get install -y pkg-config libx11-dev libxi-dev libgl1-mesa-dev libasound2-dev inotify-tools
 RUN rustup target add wasm32-unknown-unknown
